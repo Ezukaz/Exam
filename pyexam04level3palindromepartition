@@ -1,0 +1,30 @@
+py_palindrome_partitioner
+py_palindrome_partitioner.py
+Suggest Exercise
+Help grow this exam bank
+Suggest a new subject, report a wrong brief, or flag outdated text. Short Google form.
+✕
+⚡
+Moulinette Rules & Constraints
+Allowed functions: None. Use only permitted built-in functions to avoid getting 0 on exam day.
+Assignment
+Given a string s, find the minimum number of cuts needed to partition it such that every resulting substring is a palindrome.
+
+- Return the minimum number of cuts (an integer)
+- A string of length 1 requires 0 cuts
+- An empty string requires 0 cuts
+Function signature
+def palindrome_partitioner(s: str) -> int:
+Examples
+Input
+palindrome_partitioner("aab")
+Output
+1
+Input
+palindrome_partitioner("aba")
+Output
+0
+Input
+palindrome_partitioner("abc")
+Output
+2

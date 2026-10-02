@@ -1,0 +1,45 @@
+py_list_intersection_finder
+py_list_intersection_finder.py
+Suggest Exercise
+Help grow this exam bank
+Suggest a new subject, report a wrong brief, or flag outdated text. Short Google form.
+✕
+⚡
+Moulinette Rules & Constraints
+Allowed functions: None. Use only permitted built-in functions to avoid getting 0 on exam day.
+Assignment
+Find common elements present in all given integer lists. Return unique common elements sorted in ascending order.
+
+- Return an empty list if any list is empty or if no common elements exist
+- Preserve uniqueness in the output
+Function signature
+def list_intersection_finder(lists: list[list[int]]) -> list[int]:
+Examples
+Input
+list_intersection_finder([[1, 2, 3], [2, 3, 4], [2, 3, 5]])
+Output
+[2, 3]
+Input
+list_intersection_finder([[1, 2, 3, 4], [2, 4, 6, 8], [4, 8, 12]])
+Output
+[4]
+Input
+list_intersection_finder([[1, 1, 2, 3], [1, 2, 2, 3], [1, 2, 3, 3]])
+Output
+[1, 2, 3]
+Input
+list_intersection_finder([[1, 2, 3], [4, 5, 6]])
+Output
+[]
+Input
+list_intersection_finder([])
+Output
+[]
+Input
+list_intersection_finder([[1, 2, 3], []])
+Output
+[]
+Input
+list_intersection_finder([[5]])
+Output
+[5]
