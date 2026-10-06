@@ -1,9 +1,9 @@
-def make_constellation(coord: list[tuple[int, int]], dimention: int) -> list[str]:
-    output = ["." * dimention for _ in dimention]
-    for y, x in coord:
-        if x < dimention and y < dimention:
-            output[y] = output[y][:x] + "*" + output[y][x + 1:]
+def constellation_mapper(stars: list[tuple[int, int]], dim: int) -> list[str]:
+    output = [["." for _ in dim] for _ in dim]
+    for row, col in stars:
+        if (0 <= row < dim) and (0 <= col < dim):
+            output[row][col] = "*"
     return output
 
 
-print(make_constellation([(0, 0), (5, 5)], 3))
+print(constellation_mapper([(0, 0), (5, 5)], 3))
